@@ -12,3 +12,16 @@ def find_stuf():
 
 numbe = find_stuf()
 print(numbe)
+=========
+print(numbe)
+>>>>>>>>> Temporary merge branch 2
+=========
+print(numbe)
+>>>>>>>>> Temporary merge branch 2
+=========
+print(numbe)
+>>>>>>>>> Temporary merge branch 2
+
+=========
+print(numbe)
+>>>>>>>>> Temporary merge branch 2
