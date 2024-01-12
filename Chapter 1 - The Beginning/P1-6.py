@@ -17,6 +17,6 @@ def find_stuf(D):
         
     return needed_thing
 
-D = map(int, list(input().split(",")))
+D = list(map(int, list(input().split(","))))
 
 print(find_stuf(D))
