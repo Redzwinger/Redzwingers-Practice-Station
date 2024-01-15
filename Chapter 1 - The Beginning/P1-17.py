@@ -3,3 +3,21 @@
 # D means deposit while W means withdrawal. Suppose the following input is supplied to the program: D 300 D 300 W 200 D 100 Then, the output should be: 500
 
 # Hints: In case of input data being supplied to the question, it should be assumed to be a console input.
+
+def do_things(thing):
+    netAmount = 0
+    values = thing.split(" ")
+    operation = values[0]
+    amount = int(values[1])
+    
+    if operation=="D":
+        netAmount+=amount
+        
+    elif operation=="W":
+        netAmount-=amount
+
+    return netAmount
+
+transaction_log = input()
+findThings = do_things(transaction_log)
+print(findThings)
