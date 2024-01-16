@@ -11,3 +11,18 @@ Question: A website requires the users to input username and password to registe
 Hints: In case of input data being supplied to the question, it should be assumed to be a console input.
 '''
 
+import re
+
+def check_password_validity(password):
+    pattern = r"^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$#@]).{6,12}$"
+
+    if re.match(pattern, password):
+        return True
+    else:
+        return False
+
+passwords = input("Enter passwords (comma-separated): ").split(',')
+
+valid_passwords = [password for password in passwords if check_password_validity(password)]
+
+print(','.join(valid_passwords))
