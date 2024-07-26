@@ -26,7 +26,6 @@ def ipynb_to_py(ipynb_path, py_path):
     with open(py_path, 'w', encoding='utf-8') as f:
         f.writelines(code_lines)
 
-# Usage
 ipynb_path = 'path/to/your/notebook.ipynb'
 py_path = 'path/to/output/script.py'
 ipynb_to_py(ipynb_path, py_path)
