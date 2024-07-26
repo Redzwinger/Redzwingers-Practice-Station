@@ -22,7 +22,7 @@ def ipynb_to_py(ipynb_path, py_path):
             source = ''.join(cell['source'])
             code_lines.append(source + '\n\n')
 
-    # Write the extracted code to a .py file
+    # Writing the extracted code to a .py file
     with open(py_path, 'w', encoding='utf-8') as f:
         f.writelines(code_lines)
 
